@@ -1,0 +1,46 @@
+
+/* Shadow of the Colossus - atmosfera escura */
+:root {
+  --sotc-bg: #171b18;
+  --sotc-panel: #202722;
+  --sotc-panel-2: #252d27;
+  --sotc-text: #e2e5d8;
+  --sotc-muted: #b4bdad;
+  --sotc-accent: #a7b58a;
+  --sotc-border: rgba(185, 198, 158, .28);
+}
+html, body { background: var(--sotc-bg) !important; color: var(--sotc-text) !important; }
+body, p, li, label, small, .desc, .post-meta, .features-info p { color: var(--sotc-muted) !important; }
+h1,h2,h3,h4,h5,h6,.title,.name,.features-info h4 { color: var(--sotc-text) !important; }
+a { color: var(--sotc-accent) !important; }
+a:hover, a:focus { color: #d3ddba !important; }
+#header, header#header, .navbar, .navbar-collapse { background: rgba(19,24,21,.97) !important; }
+#header { border-bottom: 1px solid var(--sotc-border); }
+.logo-nav { line-height: 60px; }
+.logo-nav a { color: #d5ddc2 !important; font-size: 19px; font-weight: 700; letter-spacing: 1.2px; }
+.nav li a { color: #e0e4d8 !important; }
+.nav li a:hover, .nav li.active a { color: var(--sotc-accent) !important; }
+.section, #about, #team, #services, #blog, #works, #clients, #facts, #contact, footer,
+.team-items .item, .services-box, .blog-post, .post-content, .sidebar-widget,
+#team .item, .features-icon-box, .work-content {
+  background-color: var(--sotc-bg) !important;
+}
+.team-items .item, .services-box, .features-icon-box, .blog-post, .post-content,
+.sidebar-widget, .work-content { border-color: var(--sotc-border) !important; }
+.features-icon, .services-icon, .filter.active, .filter:hover, .btn-green, .scrollup {
+  background: #778765 !important; border-color: #778765 !important; color: #f3f4e9 !important;
+}
+.filter, .btn-gray-border { color: var(--sotc-text) !important; border-color: #78816f !important; background: transparent !important; }
+.filter.active, .filter:hover, .btn-gray-border:hover { background: #778765 !important; }
+input, textarea, select, .form-control {
+  color: var(--sotc-text) !important; background: #202722 !important; border-color: var(--sotc-border) !important;
+}
+input::placeholder, textarea::placeholder { color: #aab3a3 !important; }
+footer { border-top: 1px solid var(--sotc-border); }
+#pageloader { background: #171b18 !important; }
+#pageloader img { opacity: .75; }
+.title-box h2:before, .title-box.text-center h2:before { background: var(--sotc-accent) !important; }
+@media (max-width: 767px) {
+  .logo-nav a { font-size: 14px; letter-spacing: .5px; }
+  #header .navbar-toggle { color: var(--sotc-text); border-color: var(--sotc-border); }
+}
